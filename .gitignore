@@ -1,0 +1,4 @@
+dags/*
+!dags/extract
+logs/*
+volume/*

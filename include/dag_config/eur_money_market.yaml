@@ -1,0 +1,21 @@
+dag_id: "eur_money_market"
+api_parameters:
+  flowref: "FM"
+  series_key: "M.U2.EUR.RT.MM.EURIBOR1MD_.HSTA"
+  start_period: "2020-01-01"
+  end_period: "2020-07-01"
+schema_parameters:
+  table_name: "eur_money_market"
+  columns:
+    - "KEY VARCHAR(100)"
+    - "FREQ VARCHAR(100)"
+    - "REF_AREA VARCHAR(100)"
+    - "CURRENCY VARCHAR(100)"
+    - "PROVIDER_FM VARCHAR(100)"
+    - "INSTRUMENT_FM VARCHAR(100)"
+    - "PROVIDER_FM_ID VARCHAR(100)"
+    - "DATA_TYPE_FM VARCHAR(100)"
+    - "TIME_PERIOD VARCHAR(100)"
+schedule: "@daily"
+start_date: "2021-01-1"
+email: "tamas.marton@rtl.nl"
