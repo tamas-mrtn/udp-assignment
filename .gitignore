@@ -2,3 +2,4 @@ dags/*
 !dags/extract
 logs/*
 volume/*
+.env
